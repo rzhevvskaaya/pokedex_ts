@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: 'Edu TAS Beginner', 'Quicksand', sans-serif;
+}
+.card {
+    background-color: rgba(239, 164, 29, 0.69);
+    padding: 10px;
+    transition: background-color 0.3s;
+    display:inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 20px;
+    margin-top:20px;
+}
+.cardDescription{
+    margin-left: 20px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("back.png");
+}
+button {
+    font-family: 'Edu TAS Beginner', 'Quicksand', sans-serif;
+    background-color: #e16c17;
+    color: white;
+    padding: 10px 10px;
+    font-size: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #ff5b14;
+}
+button {
+    font-size: 15px;
+    padding: 10px;
+    margin-top:10px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid rgba(246, 140, 34, 0.97);
+    background-color: #FFA500;
+}
+.logo{
+    width: 100px;
+}
+.logo img{
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+    border: none;
+}

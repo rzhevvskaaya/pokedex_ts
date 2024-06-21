@@ -1,0 +1,23 @@
+{
+  // Нужен всегда при использовании ts в проекте
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "ESNext", // определяет тип модульной системы для программы, вид импортов и экспортов
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true, // позволяет работать с пакетами которые используют commonJS как с обычными пакетами с помощью import без использования require
+    "allowSyntheticDefaultImports": true, // позволяет импортировать без прописывания import * as React даже если библиотека не имеет default import
+    "baseUrl": ".", // указывает путь до базовой директории
+    "paths": { // позволяет заменить длинные относительные пути на абсолютный путь
+      "@/*": ["./src/*"], // вместо пути указанного в массиве будет амперсанд
+    }
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
